@@ -16,7 +16,7 @@ public:
     virtual double convert_to(Currency* target_currency) = 0;
     virtual void display_currency() = 0;
 
-    double get_exchange_rate() { // Getter function
+    double get_exchange_rate() {
         return exchange_rate;
     }
 };
@@ -31,7 +31,7 @@ public:
 
     double convert_to(Currency* target_currency) override {
         double base_value = convert_to_base();
-        return base_value / target_currency->get_exchange_rate(); // Use getter
+        return base_value / target_currency->get_exchange_rate();
     }
 
     void display_currency() override {
@@ -50,7 +50,7 @@ public:
 
     double convert_to(Currency* target_currency) override {
         double base_value = convert_to_base();
-        return base_value / target_currency->get_exchange_rate(); // Use getter
+        return base_value / target_currency->get_exchange_rate();
     }
 
     void display_currency() override {
@@ -69,7 +69,7 @@ public:
 
     double convert_to(Currency* target_currency) override {
         double base_value = convert_to_base();
-        return base_value / target_currency->get_exchange_rate(); // Use getter
+        return base_value / target_currency->get_exchange_rate();
     }
 
     void display_currency() override {
