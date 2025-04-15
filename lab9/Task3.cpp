@@ -12,3 +12,5 @@ int main() {
 
     return 0;
 }
+
+// compile command is: g++ -Wall -Wextra -g3 task3.cpp Book.cpp -o task3.exe
